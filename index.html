@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NASA APOD Browser</title>
+</head>
+<body>
+    
+  <input id="dateInput" placeholder="Enter date June 6th, 1995 or later"></input>
+  <button onclick="searchAPOD()">Search</button>
+  <hr />
+  <div id="apiFeed"></div>
+  <hr />
+  <h3>Favorite Images</h3>
+  <div id="favSelection"></div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js'></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
