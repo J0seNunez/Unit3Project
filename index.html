@@ -4,18 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
   <title>NASA APOD Browser</title>
 </head>
 <body>
-  <h1>NASA Picture of the Day</h1>
-  <hr />  
-  <input id="dateInput" title="Enter date June 6th, 1995 or later" value="1995-06-16"></input>
-  <button onclick="searchAPOD()">Search</button>
+  <header>
+    <section>
+      <h1>NASA Picture of the Day</h1>
+      <nav>
+        <section id="search">
+          <input id="dateInput" title="Enter date June 27th, 1995 or later" value="1995-06-27"></input>
+          <button onclick="searchAPOD()">Search</button>
+        </section>
+    </nav>
+    </section>
+  </header>
   <hr />
-  <div id="apiFeed"></div>
-  <hr />
-  <h4>Favorite Images</h4>
-  <div id="favSelection"></div>
+  <section>
+    <div id="apiFeed"></div>
+    <h6>Click image to display</h6>
+    <hr />
+    <h6>Favorite Images</h6>
+    <div id="favSelection"></div>
+    <hr />
+    <div id="onDisplay"></div>
+  </section>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js'></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
